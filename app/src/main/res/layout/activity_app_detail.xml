@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_app_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_def_toolbar"/>
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_margin="40dp"
+        android:layout_height="140dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardElevation="4dp"
+        app:cardPreventCornerOverlap="false"
+        app:contentPadding="0dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/white_shape"
+        >
+        <LinearLayout
+            android:id="@+id/ll_item"
+            android:background="@drawable/item_click_selector"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_marginTop="35dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@mipmap/logo"
+                    />
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:id="@+id/tv_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="App"
+                    android:textColor="@color/black_light"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/tv_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="点击这里应用图标进入，虚拟操作才能生效哦！"
+                android:textColor="@color/yellow_text"
+                />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white_deep"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/white_shape"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white_deep"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_position"
+        android:background="@drawable/item_shape_bg"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="位置模拟"
+                android:textColor="@color/black_light"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未模拟位置"
+                android:textColor="@color/gray_negative"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+
+
+        <!-- <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:src="@mipmap/ic_black_arrow"
+             android:layout_marginRight="10dp"
+             />-->
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/switch_button"
+            android:layout_width="52dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            app:sb_checked_color="@color/colorPrimary"
+            app:sb_show_indicator="false"
+            app:sb_checked="false"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white_deep"
+        />
+</LinearLayout>

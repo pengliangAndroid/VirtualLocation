@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_map_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_def_toolbar"/>
+
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:layout_height="0dp">
+
+        <com.baidu.mapapi.map.TextureMapView
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/iv_loc"
+            android:layout_margin="10dp"
+            android:layout_gravity="bottom|left"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@mipmap/ic_loc_bg"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/ll_search_shape"
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+
+            <ImageView
+                android:layout_marginLeft="12dp"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@mipmap/ic_search"
+                />
+
+            <View
+                android:layout_marginLeft="8dp"
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:background="#888"
+                />
+
+            <EditText
+                android:id="@+id/edt_search"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:textSize="12sp"
+                android:text=""
+                android:imeOptions="actionSearch"
+                android:hint="搜索地点"
+                android:textColor="@color/black_light"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <View
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white_deep"
+        />
+
+    <LinearLayout
+        android:visibility="visible"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginRight="12dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/black_light"
+                android:text="当前位置"
+                />
+            <TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/gray_deep"
+                tools:text="广东省深圳市南山区朗山路(广东省深圳市南山区朗山路)"
+                />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:textSize="14sp"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:background="@drawable/blue_text_shape_1"
+            android:textColor="@color/white"
+            android:text="选择"
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">虚拟定位</string>
+
+    <string name="msg_back_str">再按一次返回键关闭应用</string>
+
+    <string name="msg_loading">正在加载</string>
+    <string name="msg_empty_view">暂无数据</string>
+    <string name="msg_error_view">加载失败，请重新加载~</string>
+    <string name="msg_no_network">当前无网络，请检查网络</string>
+    <string name="msg_error_retry">重新加载</string>
+    <string name="msg_no_network_retry">网络设置</string>
+
+    <string name="load_end">没有更多的数据了</string>
+    <string name="load_failed">加载失败，点击重试</string>
+    <string name="loading">正在加载...</string>
+
+    <string name="not_network">网络不给力，请检查网络设置。</string>
+</resources>
