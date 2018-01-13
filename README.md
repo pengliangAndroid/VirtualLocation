@@ -3,7 +3,7 @@
 
 概述
 ---
-前断时间在朋友使用其他模拟定位App后（使用年费居然要几百~~~），对其背后的实现非常好奇思考后编写的项目。
+由于前断时间朋友使用其他模拟定位App后（使用年费居然要几百），对其背后的实现非常好奇，思考后进行开发实现的项目。
 实现原理是让第三方应用在已经Hook过Android FrameWork的容器中运行，在框架内可以拦截GPS定位、Wifi、基站进行模拟返回，
 达到偷梁换柱的效果，第三方应用获取后的数据就是模拟位置的真实GPS、WIFI、基站数据。
 
@@ -25,7 +25,8 @@ apk文件
 ![image](https://github.com/pengliangAndroid/VirtualLocation/blob/master/screenshot/2.png "使用效果截图")
 
 
-
 **启动后效果**
+  
+  
 ![image](https://github.com/pengliangAndroid/VirtualLocation/blob/master/screenshot/3.png "使用效果截图")
 
