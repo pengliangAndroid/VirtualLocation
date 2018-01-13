@@ -9,6 +9,7 @@
 
 
 **由于该项目其使用的虚拟化容器框架VirtualApp受使用授权限制，其VirtualApp框架的代码仅供个人研究**
+[VirtualLocation](https://github.com/asLody/VirtualApp) 该框架的可扩展功能有双开/多开、应用市场、模拟定位、一键改机、隐私保护、游戏修改、自动化测试、无感知热更新等技术
 
 apk文件
 ---
