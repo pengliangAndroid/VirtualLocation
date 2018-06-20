@@ -1,5 +1,6 @@
-# VirtualLocation - Deprecated
+# VirtualLocation 
 虚拟定位，免root安装后可修改其他应用定位，可修改钉钉打卡位置，微信/QQ朋友圈位置，附近的人位置等
+已废弃，gps定位转wifi接口功能已无法使用，仅供参考
 
 概述
 ---
